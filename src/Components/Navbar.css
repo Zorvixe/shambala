@@ -1,16 +1,18 @@
-body {
-  padding-top: 95px;
+.page-wrapper {
+  padding-top: 0;
 }
+
+.page-wrapper.inner-page {
+  padding-top: 95px; /* navbar + top strip */
+}
+
 .main-header {
-    position: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
 }
-/* Default: home page */
-.page-content {
-  padding-top: 0;
-}
+
 
 /* Inner pages ONLY */
 .page-content.inner-page {
@@ -131,6 +133,10 @@ body {
    padding-left: 32px; 
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.25);
   width: auto;
+}
+
+.dropdown-menu {
+  overflow: hidden;
 }
 
 /* ===========================

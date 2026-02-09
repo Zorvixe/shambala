@@ -66,7 +66,7 @@ const Hero = () => {
             <div className="col-lg-6 col-md-8">
               <div className={`hero-text ${isVisible ? "animate" : ""}`}>
                 <h1 className="hero-title">
-                  Premium <span className="text-green">Organic</span> Products
+                  Premium Organic Products
                 </h1>
 
                 <p className="hero-description">

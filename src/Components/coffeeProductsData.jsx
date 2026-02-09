@@ -78,7 +78,7 @@ const coffeeProductsData = [
     category: "Whole Beans",
     unit: "250 g",
     images: [
-      "/vdio/assets/arebica.jpg",
+      "/vdio/assets/arabica_img.jpeg",
       // "/vdio/assets/arebica.jpg",
       // "/vdio/assets/arebica.jpg"
     ],

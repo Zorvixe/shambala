@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import FloatingSocial from "./Components/FloatingSocial";
-
+import PageWrapper from "./Components/PageWrapper";
 // Home sections
 import Hero from "./Components/Hero";
 import CoffeeHero from "./Components/CoffeeHero";
@@ -45,7 +45,7 @@ function App() {
 
       {/* Global Header */}
       <Navbar />
-
+   <PageWrapper>
       {/* Routes */}
       <Routes>
 
@@ -63,7 +63,7 @@ function App() {
         <Route path="/products/:category" element={<CoffeeHero />} />
 
       </Routes>
-
+</PageWrapper>
       {/* Global Footer + Floating UI */}
       <Footer />
       <FloatingSocial />

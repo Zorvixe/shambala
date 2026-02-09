@@ -67,10 +67,6 @@ const ProductDetails = () => {
 
   return (
     <div className="fp-container fade-in">
-      {/* 🔙 BACK ARROW */}
-      <div className="fp-back" onClick={() => navigate(-1)}>
-        ← 
-      </div>
 
       {/* MAIN */}
       <div className="fp-main">

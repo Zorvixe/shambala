@@ -167,7 +167,7 @@ const productsData = [
     category: "Millets",
     unit: "500 g",
     images: [
-      "/vdio/assets/barnyard.jpeg",
+      "/vdio/assets/barnard-sh.jpeg",
       // "/vdio/assets/pearl2.png",
       // "/vdio/assets/pearl3.png"
     ],
