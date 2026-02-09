@@ -128,7 +128,7 @@ body {
 .dropdown-item:hover {
   background: rgba(219, 197, 180, 0.2) !important;
   color: #dcce09 !important;
-  transform: translateX(8px);
+   padding-left: 32px; 
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.25);
   width: auto;
 }
