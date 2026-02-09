@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isHomePage = location.pathname === "/";
+
   const [scrolled, setScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const navigate = useNavigate();
 
   /* ===========================
      SCROLL & SCREEN CHECK
@@ -56,7 +60,6 @@ const Navbar = () => {
   };
 
   const dropdownItems = {
-    shop: ["All Products", "New Arrivals"],
     coffee: ["Whole Beans", "Ground Coffee", "Cold Brew", "Specialty", "Tea"],
     organic: ["Millets", "Flours", "Malt", "Ground nuts", "Honey", "Pickles"],
   };
@@ -67,48 +70,49 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`main-header ${scrolled ? "scrolled" : ""}`}>
+    <header
+      className={`main-header
+        ${isHomePage ? "" : "inner-header"}
+        ${isHomePage && scrolled ? "scrolled" : ""}
+      `}
+    >
+      {/* ================= TOP STRIP (HOME ONLY) ================= */}
+      {isHomePage && (
+        <div className={`top-strip ${scrolled ? "hide" : ""}`}>
+          <div className="container top-strip-inner">
+            <span className="top-phone">+91 9550815979</span>
 
-      {/* ================= TOP STRIP ================= */}
-      <div className={`top-strip ${scrolled ? "hide" : ""}`}>
-        <div className="container top-strip-inner">
+            <div className="moving-text-wrapper">
+              <div className="moving-text">
+                • Freshly Filtered Coffee • Organic Products •
+                <span
+                  className="highlight"
+                  onClick={() => navigate("/products")}
+                >
+                  Shop Now
+                </span>
+                • Free Delivery Above ₹999 •
+              </div>
+            </div>
 
-          {/* PHONE */}
-          <span className="top-phone">+91 9550815979</span>
-
-          {/* MOVING TEXT */}
-          <div className="moving-text-wrapper">
-            <div className="moving-text">
-              •  Freshly Filtered Coffee • Organic Products •
-              <span
-                className="highlight"
-                onClick={() => navigate("/products")}
+            <div className="location-div">
+              <a
+                href="https://www.google.com/maps?q=17.385443,78.3298051"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="top-location-pill"
               >
-                Shop Now
-              </span>
-              • Free Delivery Above ₹999  •
+                <i className="bi bi-geo-alt-fill"></i> Location
+              </a>
             </div>
           </div>
-
-          {/* LOCATION */}
-          <div className="location-div">
-            <a
-              href="https://www.google.com/maps?q=17.385443,78.3298051"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="top-location-pill"
-            >
-              <i className="bi bi-geo-alt-fill"></i> Location
-            </a>
-          </div>
         </div>
-      </div>
+      )}
 
       {/* ================= NAVBAR ================= */}
       <nav className="navbar navbar-expand-lg">
         <div className="container d-flex align-items-center">
-
-          {/* LOGO + TITLE */}
+          {/* LOGO */}
           <button
             className="navbar-brand brand-wrap bg-transparent border-0 p-0"
             onClick={() => {
@@ -142,7 +146,6 @@ const Navbar = () => {
           {/* MENU */}
           <div className="collapse navbar-collapse" id="mainNav">
             <ul className="navbar-nav ms-auto gap-3">
-
               <li className="nav-item">
                 <button
                   className="nav-link bg-transparent border-0"
@@ -154,28 +157,6 @@ const Navbar = () => {
                   Home
                 </button>
               </li>
-
-              {/* SHOP */}
-              {/* <li className="nav-item dropdown">
-                <button
-                  className="nav-link dropdown-toggle bg-transparent border-0"
-                  data-bs-toggle="dropdown"
-                >
-                  Shop
-                </button>
-                <ul className="dropdown-menu">
-                  {dropdownItems.shop.map((item, i) => (
-                    <li key={i}>
-                      <button
-                        className="dropdown-item"
-                        onClick={() => goToCategory("products", item)}
-                      >
-                        {item}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </li> */}
 
               {/* COFFEE */}
               <li className="nav-item dropdown">
@@ -220,7 +201,6 @@ const Navbar = () => {
                   ))}
                 </ul>
               </li>
-
             </ul>
           </div>
         </div>

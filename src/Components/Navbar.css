@@ -1,11 +1,22 @@
+body {
+  padding-top: 95px;
+}
 .main-header {
-  position: fixed;
+    position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999;
-  background: transparent !important;
-  transition: 0.35s ease;
 }
+/* Default: home page */
+.page-content {
+  padding-top: 0;
+}
+
+/* Inner pages ONLY */
+.page-content.inner-page {
+  padding-top: 92px; /* adjust if navbar height changes */
+}
+
 .top-strip a {
   color: #ef3b3bbd;
 }
@@ -119,6 +130,7 @@
   color: #dcce09 !important;
   transform: translateX(8px);
   box-shadow: 0 4px 15px rgba(76, 175, 80, 0.25);
+  width: auto;
 }
 
 /* ===========================
@@ -526,4 +538,57 @@
   color: #ff4d4d;
 }
 
+/* ==============================
+   INNER PAGES SIZE REDUCTION
+============================== */
 
+/* Reduce overall navbar height */
+.inner-header {
+  background-color: #000 !important;
+}
+
+.inner-header .navbar {
+  padding: 6px 0;
+  min-height: auto;
+  background: #000 !important;
+}
+
+/* Reduce logo size */
+.inner-header .logo-img,
+.inner-header .logo-img-big {
+  width: 55px;
+  height: 55px;
+}
+
+/* Reduce brand text size */
+.inner-header .brand-main {
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.inner-header .brand-sub {
+  font-size: 0.85rem;
+}
+
+/* Reduce nav link padding (height fix) */
+.inner-header .nav-link {
+  padding: 6px 12px !important;
+  font-size: 0.9rem;
+}
+
+/* Mobile inner navbar */
+@media (max-width: 768px) {
+  .inner-header .logo-img,
+  .inner-header .logo-img-big {
+    width: 45px;
+    height: 45px;
+  }
+
+  .inner-header .navbar {
+    padding: 2px 0 !important;
+  }
+
+  .inner-header .nav-link {
+    padding: 8px 10px !important;
+  }
+}

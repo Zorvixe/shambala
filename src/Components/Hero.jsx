@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Hero.css";
-import Navbar from "./Navbar";
+
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasCounted, setHasCounted] = useState(false);
@@ -157,6 +157,7 @@ const CountUp = ({ end, suffix = "", duration = 2.5, delay = 0 }) => {
 
   return (
     <>
+    
       <span className="count-main">{count.toLocaleString()}</span>
       {count === end && suffix && (
         <span className="count-suffix">{suffix}</span>
