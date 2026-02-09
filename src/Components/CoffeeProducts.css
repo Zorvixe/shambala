@@ -1,0 +1,111 @@
+/* Brown Coffee Theme Variables */
+:root {
+  --coffee-brown: #6F4E37;
+  --coffee-dark: #5D4037;
+  --coffee-light: #A67C52;
+  --coffee-gold: #D4AF37;
+}
+
+/* Product Cards */
+.product-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid rgba(111,78,55,0.15);
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(111,78,55,0.2);
+  border-color: rgba(111,78,55,0.3);
+}
+
+.card-image-wrapper { height: 200px; overflow: hidden; position: relative; }
+.card-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+
+.product-card:hover .card-image { transform: scale(1.05); }
+
+/* Eye Button */
+.eye-btn {
+  position: absolute; bottom: 12px; right: 12px;
+  width: 36px; height: 36px; border: none;
+  background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  opacity: 0; transform: scale(0.8); transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 5;
+}
+
+.product-card:hover .eye-btn { opacity: 1; transform: scale(1); }
+
+.eye-btn i { font-size: 0.85rem; color: var(--coffee-brown); }
+
+.eye-btn:hover { 
+  background: white; 
+  transform: scale(1.1); 
+  box-shadow: 0 6px 20px rgba(111,78,55,0.4); 
+}
+/* Clickable title */
+.clickable-title {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clickable-title:hover {
+  transform: translateX(-4px);
+  color: #5D4037;
+  text-decoration: underline;
+}
+
+
+/* Rating Badge */
+.rating-badge {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
+  padding: 6px 10px; border-radius: 20px; font-size: 0.75rem;
+  font-weight: 700; color: var(--coffee-brown); box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 4;
+}
+
+/* Category Buttons */
+.btn-brown {
+  background: var(--coffee-brown);
+  border-color: var(--coffee-brown);
+  color: white;
+}
+
+.btn-brown:hover {
+  background: var(--coffee-dark);
+  border-color: var(--coffee-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline-brown {
+  color: var(--coffee-brown);
+  border-color: var(--coffee-brown);
+}
+
+.btn-outline-brown.hover-brown:hover {
+  background: var(--coffee-brown);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.text-brown { color: var(--coffee-brown) !important; }
+
+/* Price Styling */
+.price-section { display: block; }
+.old-price { font-size: 0.85rem !important; margin-left: 8px; }
+
+/* Modal */
+.modal-title.text-brown { color: var(--coffee-brown) !important; }
+.text-brown { color: var(--coffee-brown) !important; }
+
+/* Responsive Grid - 4 PER ROW */
+@media (min-width: 992px) {
+  .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+}
+
+@media (max-width: 991px) { .col-lg-3 { flex: 0 0 33.333%; max-width: 33.333%; } }
+@media (max-width: 768px) { .col-lg-3 { flex: 0 0 50%; max-width: 50%; } }
+@media (max-width: 576px) { .col-lg-3 { flex: 0 0 100%; max-width: 100%; } }

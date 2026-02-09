@@ -1,0 +1,307 @@
+.coffee-hero {
+  width: 100%;
+  min-height: 80vh;
+
+  /* 🔥 BACKGROUND IMAGE */
+  background-image: url("/vdio/assets/heroc.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* DARK OVERLAY FOR TEXT READABILITY */
+.coffee-overlay {
+
+  display: flex;
+  align-items: center;
+}
+
+/* INNER WRAPPER */
+.coffee-hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* CONTENT */
+.coffee-hero-content {
+  color: #fff;
+  max-width: 520px;
+  animation: slideFade 1s ease;
+}
+
+.coffee-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.coffee-desc {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.coffee-btn {
+  background: #ffffff;
+  color: #3b2415;
+  border: none;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.coffee-btn:hover {
+  background: #d4a373;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ANIMATION */
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .coffee-hero {
+    min-height: 70vh;
+  }
+
+  .coffee-hero-inner {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .coffee-hero-content {
+    margin: auto;
+  }
+
+  .coffee-title {
+    font-size: 40px;
+  }
+
+  .coffee-desc {
+    font-size: 16px;
+  }
+}.coffee-hero {
+  width: 100%;
+  min-height: 80vh;
+
+  /* 🔥 BACKGROUND IMAGE */
+  background-image: url("/vdio/assets/heroc.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* DARK OVERLAY FOR TEXT READABILITY */
+.coffee-overlay {
+
+ 
+  display: flex;
+  align-items: center;
+}
+
+/* INNER WRAPPER */
+.coffee-hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* CONTENT */
+.coffee-hero-content {
+  color: #ffffffd3;
+  max-width: 520px;
+  animation: slideFade 1s ease;
+}
+
+.coffee-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.coffee-desc {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.coffee-btn {
+  background: #ffffff;
+  color: #3b2415;
+  border: none;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.coffee-btn:hover {
+  background: #d4a373;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ANIMATION */
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .coffee-hero {
+    min-height: 70vh;
+  }
+
+  .coffee-hero-inner {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .coffee-hero-content {
+    margin: auto;
+  }
+
+  .coffee-title {
+    font-size: 40px;
+  }
+
+  .coffee-desc {
+    font-size: 16px;
+  }
+}
+/* ===============================
+   SMALL MOBILE (320px – 480px)
+================================ */
+@media (max-width: 480px) {
+
+  .coffee-hero {
+    min-height: 65vh;
+  }
+
+  .coffee-hero-inner {
+    padding: 16px;
+  }
+
+  .coffee-title {
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .coffee-btn {
+    padding: 14px 32px;
+    font-size: 14px;
+  }
+}
+
+/* ===============================
+   MEDIUM MOBILE / PHABLETS
+================================ */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .coffee-title {
+    font-size: 42px;
+  }
+
+  .coffee-hero {
+    min-height: 70vh;
+  }
+}
+/* ===============================
+   LAPTOP OPTIMIZATION
+================================ */
+@media (min-width: 992px) and (max-width: 1400px) {
+
+  .coffee-title {
+    font-size: 56px;
+  }
+
+  .coffee-hero-inner {
+    padding: 60px;
+  }
+}
+
+
+.coffee-hero {
+  animation: bgPan 20s linear infinite;
+  background-size: 120%;
+  will-change: background-position, background-size;
+}
+
+/* Real pan movement */
+@keyframes bgPan {
+  0% {
+    background-position: right center;
+    background-size: 120%;
+  }
+  50% {
+    background-position: left center;
+    background-size: 120%;
+  }
+  100% {
+    background-position: right center;
+    background-size: 120%;
+  }
+}
+@media (max-width: 768px) {
+  .coffee-hero {
+    animation: none !important;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 768px) {
+  .coffee-hero-content {
+    animation: floatText 3.6s ease-in-out infinite;
+  }
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+

@@ -1,0 +1,198 @@
+/* ===============================
+   ORGANIC HERO BASE
+================================ */
+.organic-hero {
+  width: 100%;
+  min-height: 80vh;
+
+  /* 🌿 BACKGROUND IMAGE */
+  background-image: url("/vdio/assets/heroOP1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ===============================
+   OVERLAY
+================================ */
+.organic-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* ===============================
+   INNER WRAPPER
+================================ */
+.organic-hero-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+
+  /* Push content to right (desktop) */
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ===============================
+   CONTENT
+================================ */
+.organic-hero-content {
+  color: #4a4b4a;
+  max-width: 190px;
+  animation: slideFadeRight 1s ease;
+  text-align: right;
+}
+
+.organic-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+.organic-btn {
+  background: #ffffff;
+  color: #1e5631;
+  border: none;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.organic-btn:hover {
+  background: #4caf50;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* ===============================
+   ENTRY ANIMATION
+================================ */
+@keyframes slideFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ===============================
+   BACKGROUND PAN ANIMATION
+   (DESKTOP / LAPTOP)
+================================ */
+@keyframes bgPan {
+  0% {
+    background-position: right center;
+  }
+  50% {
+    background-position: left center;
+  }
+  100% {
+    background-position: right center;
+  }
+}
+
+/* ===============================
+   FLOATING TEXT (MOBILE)
+================================ */
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   MOBILE & TABLET
+================================ */
+@media (max-width: 768px) {
+
+  .organic-hero {
+    min-height: 70vh;
+
+    /* Disable background animation on mobile */
+    animation: none !important;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .organic-hero-inner {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .organic-hero-content {
+    margin: auto;
+    text-align: center;
+    color: #dee5de;
+
+    /* Floating text only on mobile */
+    animation: floatText 3.6s ease-in-out infinite;
+  }
+
+  .organic-title {
+    font-size: 40px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+@media (max-width: 480px) {
+
+  .organic-hero {
+    min-height: 65vh;
+  }
+
+  .organic-title {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .organic-btn {
+    padding: 14px 32px;
+    font-size: 14px;
+  }
+}
+
+/* ===============================
+   LAPTOP / DESKTOP OPTIMIZATION
+================================ */
+@media (min-width: 992px) {
+
+  .organic-hero {
+    animation: bgPan 22s ease-in-out infinite;
+    background-size: 120%;
+    will-change: background-position;
+  }
+
+  .organic-title {
+    font-size: 46px;
+  }
+
+  .organic-hero-inner {
+    padding: 60px;
+  }
+}

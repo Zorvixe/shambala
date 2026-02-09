@@ -1,0 +1,67 @@
+.floating-social {
+  position: fixed;
+  right: 15px;
+  bottom: 1%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Wrapper keeps fixed width so others don't move */
+.social-item {
+  width: 160px;   /* expanded width */
+  height: 52px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Actual button */
+.social-btn {
+  width: 45px;    /* collapsed size */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 30px;
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  text-decoration: none;
+  position: relative;
+  transition: width 0.4s ease;
+}
+
+.social-btn i {
+  min-width: 52px;
+  text-align: center;
+}
+
+.social-btn span {
+  white-space: nowrap;
+  padding-right: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transform: translateX(15px);
+  transition: all 0.4s ease;
+}
+
+/* Only hovered one expands */
+.social-btn:hover {
+  width: 180px;
+}
+
+.social-btn:hover span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Colors */
+.call { background: linear-gradient(135deg, #0d6efd, #084298); }
+.whatsapp { background: linear-gradient(135deg, #25d366, #0b8457); }
+.instagram { background: linear-gradient(135deg, #f77737, #c13584); }
+.facebook { background: linear-gradient(135deg, #1877f2, #0d47a1); }
+

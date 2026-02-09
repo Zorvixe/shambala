@@ -1,0 +1,498 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: transparent !important;
+  transition: 0.35s ease;
+}
+.top-strip a {
+  color: #ef3b3bbd;
+}
+
+.top-strip a:hover {
+  color: #198754; /* bootstrap green */
+}
+
+.main-header.scrolled {
+  background: linear-gradient(135deg, rgba(27, 28, 28, 0.847), rgba(22, 22, 22, 0.874)) !important;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(40, 167, 69, 0.25);
+}
+
+.top-strip {
+  backdrop-filter: blur(5px);
+  color: rgba(244, 238, 238, 0.95);
+  font-size: 1rem;
+  padding: 6px 0;
+  /* border-bottom: 1px solid rgba(228, 237, 228, 0.884); */
+  transition: 0.3s ease;
+}
+
+.top-strip.hide {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  background: transparent !important;
+  padding: 8px 0 !important;
+  transition: 0.3s ease;
+}
+
+.main-header.scrolled .navbar {
+  padding: 6px 0;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #af4c4c !important;
+  transform: scale(1.02);
+}
+
+.logo-img {
+  width: 60px;        
+  object-fit: contain;
+  border-radius: 50%;  /* MAKES IT CIRCLE */
+  border: 2px solid rgba(255, 255, 255, 0.6); /* subtle border */
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  transition: 0.3s ease;
+}
+
+
+.main-header.scrolled .logo-img {
+  height: 50px;
+}
+
+/* Navbar links */
+.nav-link {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 0.92rem;
+  padding: 8px 16px !important;
+  border-radius: 25px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(5px);
+}
+
+.nav-link:hover,
+.nav-item .dropdown-toggle:hover {
+  color: #ebe7ed !important;
+  background: rgba(76, 175, 80, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+}
+
+/* ===========================
+   DROPDOWN MENU
+=========================== */
+.dropdown-menu {
+  background: rgba(39, 40, 41, 0.655);
+  backdrop-filter: blur(20px);
+  /* border: 1px solid rgba(243, 245, 243, 0.929); */
+  padding: 12px 0;
+  min-width: 159px;
+  border-radius: 16px;
+  margin-top: 8px;
+  box-shadow: 0 20px 40px rgba(40, 167, 69, 0.2);
+}
+
+.dropdown-item {
+  color: rgba(254, 252, 252, 0.911) !important;
+  padding: 12px 24px;
+  font-weight: 500;
+  border-radius: 12px;
+  margin: 2px 8px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: rgba(219, 197, 180, 0.2) !important;
+  color: #dcce09 !important;
+  transform: translateX(8px);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.25);
+}
+
+/* ===========================
+   DESKTOP HOVER DROPDOWN
+=========================== */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    animation: slideDown 0.3s ease-out;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+.custom-toggler {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.custom-toggler:hover {
+  background: rgba(76, 175, 80, 0.2);
+  transform: scale(1.1);
+}
+
+.custom-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: linear-gradient(135deg, rgba(28, 30, 35, 0.98), rgba(40, 167, 69, 0.2)) !important;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    padding: 12px 20px !important;
+    margin: 4px 0;
+    border-radius: 12px;
+  }
+  
+  .gap-3 {
+    gap: 0.5rem !important;
+  }
+}
+
+/* ===========================
+   RESPONSIVE LOGO & PADDING
+=========================== */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 48px;
+    width: 48px;
+  }
+
+  .main-header.scrolled .logo-img {
+    height: 42px;
+    width: 42px;
+  }
+}
+
+/* ===========================
+   PERFECT SCROLLBAR SYNC
+=========================== */
+.main-header.scrolled .top-strip {
+  padding: 4px 0;
+}
+
+.main-header.scrolled .top-strip span {
+  font-size: 0.85rem;
+}
+/* ===========================
+   MOBILE NAVBAR FIX (ONLY MOBILE)
+=========================== */
+
+@media (max-width: 576px) {
+
+  /* Brand container */
+  .navbar-brand.brand-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 78%;
+    padding: 0;
+  }
+
+  /* Logo */
+  .logo-img {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+
+  /* Brand text */
+  .navbar-brand span {
+    font-size: 0.95rem !important;
+    line-height: 1.2;
+    white-space: normal;
+    text-align: left;
+    display: block;
+  }
+
+  /* Prevent overflow */
+  .navbar-brand {
+    overflow: hidden;
+  }
+
+  /* Navbar padding balance */
+  .navbar {
+    padding: 10px 0 !important;
+  }
+
+  /* Toggler alignment */
+  .navbar-toggler {
+    padding: 6px;
+  }
+
+  /* Mobile menu spacing */
+  .navbar-collapse {
+    margin-top: 10px;
+  }
+}
+
+/* EXTRA SMALL DEVICES (320px) */
+@media (max-width: 360px) {
+  .navbar-brand span {
+    font-size: 0.85rem !important;
+  }
+
+  .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* ===========================
+   MOBILE MENU UX FIX
+   (Like modern apps)
+=========================== */
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    max-height: 70vh;          /* 👈 key fix */
+    overflow-y: auto;          /* scroll inside menu */
+    overscroll-behavior: contain;
+
+    background: linear-gradient(
+      135deg,
+      rgba(28, 30, 35, 0.98),
+      rgba(40, 167, 69, 0.2)
+    ) !important;
+
+    backdrop-filter: blur(15px);
+    border-radius: 0 0 20px 20px;
+    padding: 16px 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    z-index: 999;
+  }
+
+  /* Smooth mobile scroll */
+  .navbar-collapse::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .navbar-collapse::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.25);
+    border-radius: 10px;
+  }
+}
+/* ===========================
+   MOBILE SLIDE-DOWN ANIMATION
+=========================== */
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    transform-origin: top;
+    animation: mobileSlideDown 0.35s ease-out;
+  }
+
+  .navbar-collapse:not(.show) {
+    display: none;
+  }
+}
+
+@keyframes mobileSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scaleY(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+/* BIG LOGO + 2-LINE TITLE SECTION */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.logo-img-big {
+  width: 109px;
+  height: 109px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.logo-img-big:hover {
+  transform: scale(1.05);
+  border-color: #28a745;
+  box-shadow: 0 12px 35px rgba(40, 167, 69, 0.4);
+}
+
+/* Attractive 2-line title */
+.brand-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.brand-main {
+  font-size: 1.8rem;
+  font-weight: 750;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  line-height: 1.1;
+}
+
+.brand-sub {
+  font-size: 1.3rem;
+  font-weight: 650;
+  color: #ccd1e3;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  margin-top: -2px;
+}
+
+/* Scrolled state - smaller sizes */
+.main-header.scrolled .logo-img-big {
+  width: 70px;
+  height: 70px;
+  border-width: 3px;
+}
+
+.main-header.scrolled .brand-main {
+  font-size: 1.3rem;
+}
+
+.main-header.scrolled .brand-sub {
+  font-size: 0.75rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .logo-section {
+    gap: 12px;
+  }
+  
+  .logo-img-big {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .brand-main {
+    font-size: 1.4rem;
+  }
+  
+  .main-header.scrolled .logo-img-big {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img-big {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* TOP STRIP BASE */
+.top-strip {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 0;
+  overflow: hidden;
+}
+
+.top-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* PHONE */
+.top-phone {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* MOVING TEXT */
+.moving-text-wrapper {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.moving-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: marquee 18s linear infinite;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* HIGHLIGHT TEXT */
+.moving-text .highlight {
+  color: #ffcc00;
+  font-weight: 700;
+}
+
+/* MARQUEE ANIMATION */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+/* HIDE TOP STRIP ON SCROLL */
+.top-strip.hide {
+  display: none;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .moving-text {
+    animation-duration: 12s;
+    font-size: 13px;
+  }
+}
