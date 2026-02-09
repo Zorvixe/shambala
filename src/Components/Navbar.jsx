@@ -57,7 +57,7 @@ const Navbar = () => {
 
   const dropdownItems = {
     shop: ["All Products", "New Arrivals"],
-    coffee: ["Whole Beans", "Ground Coffee", "Cold Brew", "Specialty","Tea"],
+    coffee: ["Whole Beans", "Ground Coffee", "Cold Brew", "Specialty", "Tea"],
     organic: ["Millets", "Flours", "Malt", "Ground nuts", "Honey", "Pickles"],
   };
 
@@ -79,27 +79,28 @@ const Navbar = () => {
           {/* MOVING TEXT */}
           <div className="moving-text-wrapper">
             <div className="moving-text">
-               •  Freshly Filtered Coffee • Organic Products •
+              •  Freshly Filtered Coffee • Organic Products •
               <span
                 className="highlight"
                 onClick={() => navigate("/products")}
               >
                 Shop Now
               </span>
-              • Free Delivery Above ₹999  • 
+              • Free Delivery Above ₹999  •
             </div>
           </div>
 
           {/* LOCATION */}
-          <a
-            href="https://www.google.com/maps?q=17.385443,78.3298051"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="top-location"
-          >
-            <i className="bi bi-geo-alt-fill"></i>
-          </a>
-
+          <div className="location-div">
+            <a
+              href="https://www.google.com/maps?q=17.385443,78.3298051"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="top-location-pill"
+            >
+              <i className="bi bi-geo-alt-fill"></i> Location
+            </a>
+          </div>
         </div>
       </div>
 

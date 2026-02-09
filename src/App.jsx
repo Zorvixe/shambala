@@ -1,59 +1,73 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// Layout components
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import FloatingSocial from "./Components/FloatingSocial";
+
+// Home sections
 import Hero from "./Components/Hero";
 import CoffeeHero from "./Components/CoffeeHero";
-import OrganicProducts from "./Components/OrganicProducts";
-import CoffeeProducts from "./Components/CoffeeProducts";
-import Promo2 from "./Components/Promo2";
-import Footer from "./Components/Footer";
-import ProductDetails from "./Components/ProductDetails";
-import FloatingSocial from "./Components/FloatingSocial";
+import OrganicHero from "./Components/OrganicHero";
 import HomeOrganicProducts from "./Components/HomeOrganicProducts";
 import HomeCoffeeProducts from "./Components/HomeCoffeeProducts";
-import OrganicHero from "./Components/OrganicHero";
+import Promo2 from "./Components/Promo2";
 
+// Pages
+import OrganicProducts from "./Components/OrganicProducts";
+import CoffeeProducts from "./Components/CoffeeProducts";
+import ProductDetails from "./Components/ProductDetails";
+
+
+// ======================
+// Home Page Layout
+// ======================
 function Home() {
   return (
-    
     <>
-         <Navbar />
       <Hero />
-       <FloatingSocial />
       <CoffeeHero />
-      <OrganicHero/>
-       <HomeOrganicProducts />
-       <HomeCoffeeProducts />
+      <OrganicHero />
+      <HomeOrganicProducts />
+      <HomeCoffeeProducts />
       <Promo2 />
-      <Footer />
-    
     </>
   );
 }
 
+
+// ======================
+// App Root
+// ======================
 function App() {
   return (
     <BrowserRouter>
+
+      {/* Global Header */}
+      <Navbar />
+
+      {/* Routes */}
       <Routes>
-        
-        {/* Home Page */}
+
+        {/* Home */}
         <Route path="/" element={<Home />} />
 
-        {/* Product Details Page */}
+        {/* Product pages */}
         <Route path="/coffee-products" element={<CoffeeProducts />} />
         <Route path="/organic-products" element={<OrganicProducts />} />
         <Route path="/product/:id" element={<ProductDetails />} />
-        <Route path="/products" element={<CoffeeHero />} />
 
+        {/* Category routes */}
         <Route path="/organic/:category" element={<OrganicProducts />} />
-      <Route path="/coffee/:category" element={<CoffeeProducts />} />
-      <Route path="/products/:category" element={<CoffeeHero />} />
-
-
-
+        <Route path="/coffee/:category" element={<CoffeeProducts />} />
+        <Route path="/products/:category" element={<CoffeeHero />} />
 
       </Routes>
-       
+
+      {/* Global Footer + Floating UI */}
+      <Footer />
+      <FloatingSocial />
+
     </BrowserRouter>
   );
 }

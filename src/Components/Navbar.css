@@ -496,3 +496,34 @@
     font-size: 13px;
   }
 }
+
+.location-div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.top-location-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #fff !important; /* text stays white */
+}
+
+/* 🔴 Only icon red */
+.top-location-pill i {
+  color: #ef3b3b;
+}
+
+/* hover behavior */
+.top-location-pill:hover {
+  color: #fff;
+}
+
+.top-location-pill:hover i {
+  color: #ff4d4d;
+}
+
+

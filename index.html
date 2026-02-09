@@ -1,17 +1,183 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
+    <!-- Meta Charset -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    
+    <!-- Primary Meta Tags -->
+    <title>Organic Products | Premium Organic & Natural Products for Healthy Living</title>
+    <meta name="description" content="Discover premium organic products for a healthier lifestyle. Natural, chemical-free products for skincare, food, and wellness. Shop our certified organic collection.">
+    <meta name="keywords" content="organic products, natural products, organic food, organic skincare, chemical-free, healthy living, sustainable products, eco-friendly, wellness, natural remedies">
+    <meta name="author" content="Organic Products">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Organic Products | Premium Organic & Natural Products">
+    <meta property="og:description" content="Discover premium organic products for a healthier, natural lifestyle. Certified organic food, skincare, and wellness products.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://organicproducts.com">
+    <meta property="og:image" content="https://organicproducts.com/images/og-image.jpg">
+    <meta property="og:image:alt" content="Premium Organic Products Collection">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Organic Products">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:updated_time" content="2024-12-15T00:00:00+00:00">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Organic Products | Healthy Natural Living">
+    <meta name="twitter:description" content="Premium organic and natural products for your wellness journey.">
+    <meta name="twitter:image" content="https://organicproducts.com/images/twitter-card.jpg">
+    <meta name="twitter:site" content="@organicproducts">
+    <meta name="twitter:creator" content="@organicproducts">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://organicproducts.com">
+    
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#28a745">
+    <meta name="msapplication-TileColor" content="#28a745">
+    <meta name="theme-color" content="#28a745">
+    
+    <!-- DNS Prefetch for Performance -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Preconnect for Faster Loading -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+          crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     
-    <title>organic</title>
+    <!-- Structured Data / JSON-LD for Organic Products Store -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Store",
+          "@id": "https://organicproducts.com/#store",
+          "name": "Organic Products",
+          "url": "https://organicproducts.com",
+          "description": "Premium organic and natural products store offering certified organic food, skincare, and wellness products.",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Organic Street",
+            "addressLocality": "City",
+            "addressRegion": "State",
+            "postalCode": "12345",
+            "addressCountry": "USA"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-234-567-8900",
+            "contactType": "Customer Service",
+            "email": "info@organicproducts.com",
+            "areaServed": "US"
+          },
+          "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-17:00, Su 11:00-16:00",
+          "sameAs": [
+            "https://facebook.com/organicproducts",
+            "https://instagram.com/organicproducts",
+            "https://twitter.com/organicproducts",
+            "https://pinterest.com/organicproducts"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://organicproducts.com/#website",
+          "url": "https://organicproducts.com",
+          "name": "Organic Products",
+          "publisher": {
+            "@id": "https://organicproducts.com/#store"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Premium Organic Collection",
+          "description": "Collection of certified organic products for healthy living",
+          "brand": {
+            "@type": "Brand",
+            "name": "Organic Products"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    }
+    </script>
+   
   </head>
+  
   <body>
     <div id="root"></div>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+            crossorigin="anonymous"></script>
+    
+    <!-- Main JavaScript -->
     <script type="module" src="/src/main.jsx"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Additional SEO & Performance Scripts -->
+    <script>
+      // Performance monitoring
+      window.addEventListener('load', function() {
+        // Track page load time
+        if ('PerformanceObserver' in window) {
+          const observer = new PerformanceObserver((list) => {
+            for (const entry of list.getEntries()) {
+              console.log('Performance Entry:', entry.name, entry.startTime, entry.duration);
+            }
+          });
+          observer.observe({ entryTypes: ['navigation', 'resource', 'paint'] });
+        }
+      });
+      
+      // Lazy loading images (if not handled by framework)
+      document.addEventListener('DOMContentLoaded', function() {
+        const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+        if ('IntersectionObserver' in window) {
+          const lazyImageObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                const lazyImage = entry.target;
+                lazyImage.src = lazyImage.dataset.src;
+                lazyImage.classList.remove('lazy');
+                lazyImageObserver.unobserve(lazyImage);
+              }
+            });
+          });
+          lazyImages.forEach(function(lazyImage) {
+            lazyImageObserver.observe(lazyImage);
+          });
+        }
+      });
+    </script>
   </body>
 </html>
