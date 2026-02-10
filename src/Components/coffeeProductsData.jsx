@@ -55,7 +55,7 @@ const coffeeProductsData = [
     category: "Ground Coffee",
     unit: "250 g",
     images: [
-      "/vdio/assets/filter.jpg",
+      "/vdio/assets/coffe-hero.jpeg",
       // "/vdio/assets/filter.jpg",
       // "/vdio/assets/filter.jpg"
     ],
@@ -170,7 +170,7 @@ const coffeeProductsData = [
     category: "Tea",
     unit: "",
     images: [
-      "/vdio/assets/bop.png",
+      "/vdio/assets/organic-tea.png",
       // "/vdio/assets/coffe.webp",
       // "/vdio/assets/coffe.webp"
     ],

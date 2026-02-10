@@ -51,6 +51,8 @@ function App() {
 
         {/* Home */}
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<CoffeeProducts />} />
+        
 
         {/* Product pages */}
         <Route path="/coffee-products" element={<CoffeeProducts />} />
