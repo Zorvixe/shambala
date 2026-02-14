@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
+
 
 // Layout components
 import Navbar from "./Components/Navbar";
@@ -42,6 +44,7 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
 
       {/* Global Header */}
       <Navbar />
