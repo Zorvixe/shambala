@@ -8,6 +8,7 @@ import "./CoffeeProducts.css";
 ================================ */
 const coffeeCategories = [
   "All",
+  "Coffe Beans",
   "Whole Beans",
   "Ground Coffee",
   "Cold Brew",
@@ -19,6 +20,7 @@ const coffeeCategories = [
    URL SLUG → CATEGORY NAME
 ================================ */
 const CATEGORY_MAP = {
+  "coffe-beans":"Coffe Beans",
   "whole-beans": "Whole Beans",
   "ground-coffee": "Ground Coffee",
   "cold-brew": "Cold Brew",

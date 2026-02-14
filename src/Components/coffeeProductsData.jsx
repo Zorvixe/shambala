@@ -1,6 +1,50 @@
 const coffeeProductsData = [
 
   {
+    id: 201,
+    name: "Peaberry coffee beans roasted ",
+    price: 1199,
+    oldPrice: 1200,
+    rating: 5,
+    category: "Coffe Beans",
+    unit: "1 kg",
+    images: [
+      "/vdio/assets/peaberry1.png",
+      // "/vdio/assets/es.webp",
+      // "/vdio/assets/es.webp"
+    ],
+    points: [
+      "Dark roasted premium beans",
+      "Strong crema formation",
+      "Ideal for espresso machines",
+      "Bold and intense flavor",
+      "Low acidity with rich body",
+      "Perfect for cappuccino and latte"
+    ]
+  },
+  {
+    id: 202,
+    name: "Arabica coffee beans roasted",
+    price: 1000,
+    oldPrice: 1200,
+    rating: 5,
+    category: "Coffe Beans",
+    unit: "1 kg",
+    images: [
+      "/vdio/assets/arabica.png",
+      // "/vdio/assets/es.webp",
+      // "/vdio/assets/es.webp"
+    ],
+    points: [
+      "Dark roasted premium beans",
+      "Strong crema formation",
+      "Ideal for espresso machines",
+      "Bold and intense flavor",
+      "Low acidity with rich body",
+      "Perfect for cappuccino and latte"
+    ]
+  },
+  {
     id: 101,
     name: "Espresso Roast",
     price: 480,
@@ -20,6 +64,75 @@ const coffeeProductsData = [
       "Bold and intense flavor",
       "Low acidity with rich body",
       "Perfect for cappuccino and latte"
+    ]
+  },
+
+
+  
+  {
+    id: 203,
+    name: "Peaberry grained filter coffee powder",
+    price: 820,
+    oldPrice: 950,
+    rating: 4,
+    category: "Whole Beans",
+    unit: "600 g",
+    images: [
+      "/vdio/assets/peaberry coffe.jpeg",
+      // "/vdio/assets/robust.png",
+      // "/vdio/assets/robust.png"
+    ],
+    points: [
+      "Strong and bold flavor profile",
+      "High caffeine content",
+      "Ideal for morning energy boost",
+      "Produces thick crema",
+      "Perfect for strong coffee lovers",
+      "Carefully blended for consistency"
+    ]
+  },
+  {
+    id: 204,
+    name: "Arabica filter coffee powder 60/40",
+    price: 750,
+    oldPrice: 800,
+    rating: 4,
+    category: "Whole Beans",
+    unit: "600 g",
+    images: [
+      "/vdio/assets/arabica-coffe.png",
+      // "/vdio/assets/robust.png",
+      // "/vdio/assets/robust.png"
+    ],
+    points: [
+      "Strong and bold flavor profile",
+      "High caffeine content",
+      "Ideal for morning energy boost",
+      "Produces thick crema",
+      "Perfect for strong coffee lovers",
+      "Carefully blended for consistency"
+    ]
+  },
+   {
+    id: 205,
+    name: "Araku instant black coffee 100g ",
+    price: 190,
+    oldPrice: 220,
+    rating: 4,
+    category: "Whole Beans",
+    unit: "100 g",
+    images: [
+      "/vdio/assets/araku.png",
+      // "/vdio/assets/robust.png",
+      // "/vdio/assets/robust.png"
+    ],
+    points: [
+      "Strong and bold flavor profile",
+      "High caffeine content",
+      "Ideal for morning energy boost",
+      "Produces thick crema",
+      "Perfect for strong coffee lovers",
+      "Carefully blended for consistency"
     ]
   },
 
@@ -293,50 +406,50 @@ const coffeeProductsData = [
       "Suitable for filter brewing"
     ]
   },
-  {
-    id: 114,
-    name: "Pure blend 60/40 [powder]",
-    price: 665,
-    oldPrice: 750,
-    rating: 4,
-    category: "Tea",
-    unit: "",
-    images: [
-      "/vdio/assets/blend.png",
-      // "/vdio/assets/coffe.webp",
-      // "/vdio/assets/coffe.webp"
-    ],
-    points: [
-      "Fine grind for all brewing methods",
-      "Fresh aroma locked in",
-      "Daily use premium quality",
-      "Smooth and balanced taste",
-      "Easy to prepare",
-      "Suitable for filter brewing"
-    ]
-  },
-  {
-    id: 115,
-    name: "Peaberry 60/40 [powder]",
-    price: 756,
-    oldPrice: 850,
-    rating: 4,
-    category: "Tea",
-    unit: "",
-    images: [
-      "/vdio/assets/peaberry.png",
-      // "/vdio/assets/coffe.webp",
-      // "/vdio/assets/coffe.webp"
-    ],
-    points: [
-      "Fine grind for all brewing methods",
-      "Fresh aroma locked in",
-      "Daily use premium quality",
-      "Smooth and balanced taste",
-      "Easy to prepare",
-      "Suitable for filter brewing"
-    ]
-  },
+  // {
+  //   id: 114,
+  //   name: "Pure blend 60/40 [powder]",
+  //   price: 665,
+  //   oldPrice: 750,
+  //   rating: 4,
+  //   category: "Tea",
+  //   unit: "",
+  //   images: [
+  //     "/vdio/assets/blend.png",
+  //     // "/vdio/assets/coffe.webp",
+  //     // "/vdio/assets/coffe.webp"
+  //   ],
+  //   points: [
+  //     "Fine grind for all brewing methods",
+  //     "Fresh aroma locked in",
+  //     "Daily use premium quality",
+  //     "Smooth and balanced taste",
+  //     "Easy to prepare",
+  //     "Suitable for filter brewing"
+  //   ]
+  // },
+  // {
+  //   id: 115,
+  //   name: "Peaberry 60/40 [powder]",
+  //   price: 756,
+  //   oldPrice: 850,
+  //   rating: 4,
+  //   category: "Tea",
+  //   unit: "",
+  //   images: [
+  //     "/vdio/assets/peaberry.png",
+  //     // "/vdio/assets/coffe.webp",
+  //     // "/vdio/assets/coffe.webp"
+  //   ],
+  //   points: [
+  //     "Fine grind for all brewing methods",
+  //     "Fresh aroma locked in",
+  //     "Daily use premium quality",
+  //     "Smooth and balanced taste",
+  //     "Easy to prepare",
+  //     "Suitable for filter brewing"
+  //   ]
+  // },
 
  
 

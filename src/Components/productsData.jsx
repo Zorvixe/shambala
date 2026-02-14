@@ -189,7 +189,7 @@ const productsData = [
     category: "Millets",
     unit: "500 g",
     images: [
-      "/vdio/assets/kodo-millet.jpeg",
+      "/vdio/assets/kodo-timbaku.jpeg",
       // "/vdio/assets/pearl2.png",
       // "/vdio/assets/pearl3.png"
     ],
@@ -684,7 +684,94 @@ const productsData = [
   },
 
   /* ---------- PICKLES ---------- */
-
+  {
+    id: 51,
+    name: "mamidi allam pickle",
+    price: 210,
+    oldPrice: 250,
+    rating: 4,
+    category: "Pickles",
+    unit: "300 g",
+    images: [
+      "/vdio/assets/mamidi.png",
+      // "/vdio/assets/pk.webp",
+      // "/vdio/assets/pk.webp"
+    ],
+    points: [
+      "Traditional homemade style",
+      "No artificial colors",
+      "Authentic spicy taste",
+      "Prepared with fresh mangoes",
+      "Perfect side dish for meals",
+      "Long shelf life"
+    ]
+  },
+  {
+    id: 52,
+    name: "Usirikaya pickle [amla]",
+    price: 140,
+    oldPrice: 160,
+    rating: 4,
+    category: "Pickles",
+    unit: "250 g",
+    images: [
+      "/vdio/assets/usirikaya.png",
+      // "/vdio/assets/pk.webp",
+      // "/vdio/assets/pk.webp"
+    ],
+    points: [
+      "Traditional homemade style",
+      "No artificial colors",
+      "Authentic spicy taste",
+      "Prepared with fresh amla",
+      "Perfect side dish for meals",
+      "Long shelf life"
+    ]
+  },
+  {
+    id: 53,
+    name: "pandu mirapakaya pickle",
+    price: 210,
+    oldPrice: 250,
+    rating: 4,
+    category: "Pickles",
+    unit: "300 g",
+    images: [
+      "/vdio/assets/pandu.png",
+      // "/vdio/assets/pk.webp",
+      // "/vdio/assets/pk.webp"
+    ],
+    points: [
+      "Traditional homemade style",
+      "No artificial colors",
+      "Authentic spicy taste",
+      "Prepared with fresh mangoes",
+      "Perfect side dish for meals",
+      "Long shelf life"
+    ]
+  },
+  {
+    id: 54,
+    name: "chinthakaya tamarind pickle",
+    price: 210,
+    oldPrice: 250,
+    rating: 4,
+    category: "Pickles",
+    unit: "300 g",
+    images: [
+      "/vdio/assets/chintakaya.png",
+      // "/vdio/assets/pk.webp",
+      // "/vdio/assets/pk.webp"
+    ],
+    points: [
+      "Traditional homemade style",
+      "No artificial colors",
+      "Authentic spicy taste",
+      "Prepared with fresh mangoes",
+      "Perfect side dish for meals",
+      "Long shelf life"
+    ]
+  },
   {
     id: 15,
     name: "Mango Pickle",
@@ -918,28 +1005,28 @@ const productsData = [
     ]
   },
 
-  {
-    id: 24,
-    name: "Garam Pudi",
-    price: 50,
-    oldPrice: 60,
-    rating: 4,
-    category: "Chutney Pudi",
-    unit: "250 g",
-    images: [
-      "/vdio/assets/garam masala.webp",
-      "/vdio/assets/garam masala.webp",
-      "/vdio/assets/garam masala.webp"
-    ],
-    points: [
-      "Traditional spice mix",
-      "Authentic flavor",
-      "No artificial colors",
-      "Perfect for curries",
-      "Strong aroma",
-      "Long shelf life"
-    ]
-  },
+  // {
+  //   id: 24,
+  //   name: "Garam Pudi",
+  //   price: 50,
+  //   oldPrice: 60,
+  //   rating: 4,
+  //   category: "Chutney Pudi",
+  //   unit: "250 g",
+  //   images: [
+  //     "/vdio/assets/garam masala.webp",
+  //     "/vdio/assets/garam masala.webp",
+  //     "/vdio/assets/garam masala.webp"
+  //   ],
+  //   points: [
+  //     "Traditional spice mix",
+  //     "Authentic flavor",
+  //     "No artificial colors",
+  //     "Perfect for curries",
+  //     "Strong aroma",
+  //     "Long shelf life"
+  //   ]
+  // },
 
   {
     id: 25,
