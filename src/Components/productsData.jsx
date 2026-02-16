@@ -524,28 +524,7 @@ const productsData = [
     ]
   },
 
-  {
-    id: 12,
-    name: "Groundnut Oil",
-    price: 1733,
-    oldPrice: 1820,
-    rating: 4,
-    category: "Ground Nuts",
-    unit: "5 Litre",
-    images: [
-      "/vdio/assets/goil.webp",
-      "/vdio/assets/goil.webp",
-      "/vdio/assets/goil.webp"
-    ],
-    points: [
-      "Cold pressed oil",
-      "Heart friendly fats",
-      "No chemicals used",
-      "Rich aroma and taste",
-      "Boosts immunity",
-      "Ideal for daily cooking"
-    ]
-  },
+ 
    {
     id: 33,
     name: "Peanut laddu",
@@ -1072,7 +1051,98 @@ const productsData = [
       "Easy to cook",
       "Long shelf life"
     ]
-  }
+  },
+
+  //oils
+  {
+    id: 12,
+    name: "Groundnut Oil",
+    price: 1733,
+    oldPrice: 1820,
+    rating: 4,
+    category: "Oil",
+    unit: "5 Litre",
+    images: [
+      "/vdio/assets/goil.webp",
+      // "/vdio/assets/goil.webp",
+      // "/vdio/assets/goil.webp"
+    ],
+    points: [
+      "Cold pressed oil",
+      "Heart friendly fats",
+      "No chemicals used",
+      "Rich aroma and taste",
+      "Boosts immunity",
+      "Ideal for daily cooking"
+    ]
+  },
+  {
+    id: 60,
+    name: "sunflower wood pressed",
+    price: 350,
+    oldPrice: 400,
+    rating: 4,
+    category: "Oil",
+    unit: "1 Litre",
+    images: [
+      "/vdio/assets/sunfl.png",
+      // "/vdio/assets/goil.webp",
+      // "/vdio/assets/goil.webp"
+    ],
+    points: [
+      "Cold pressed oil",
+      "Heart friendly fats",
+      "No chemicals used",
+      "Rich aroma and taste",
+      "Boosts immunity",
+      "Ideal for daily cooking"
+    ]
+  },
+  {
+    id: 61,
+    name: "sesame oil wood pressed",
+    price: 380,
+    oldPrice: 400,
+    rating: 4,
+    category: "Oil",
+    unit: "1 Litre",
+    images: [
+      "/vdio/assets/sesme.png",
+      // "/vdio/assets/goil.webp",
+      // "/vdio/assets/goil.webp"
+    ],
+    points: [
+      "Cold pressed oil",
+      "Heart friendly fats",
+      "No chemicals used",
+      "Rich aroma and taste",
+      "Boosts immunity",
+      "Ideal for daily cooking"
+    ]
+  },
+  {
+    id: 62,
+    name: "kususma oil wood pressed [safflower]",
+    price: 380,
+    oldPrice: 400,
+    rating: 4,
+    category: "Oil",
+    unit: "1 Litre",
+    images: [
+      "/vdio/assets/kusuma.png",
+      // "/vdio/assets/goil.webp",
+      // "/vdio/assets/goil.webp"
+    ],
+    points: [
+      "Cold pressed oil",
+      "Heart friendly fats",
+      "No chemicals used",
+     
+      "Boosts immunity",
+      "Ideal for daily cooking"
+    ]
+  },
+  
 ];
 
 export default productsData;
